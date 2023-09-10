@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body ,html{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    position: absolute;
+     width: 100%;
+     justify-content: space-between;
+     top: 0;
+     left   : 0;
+     padding: 20px;
+     color: #b82626 ;
+}
+ul{
+    list-style: none;
+}
+.links{
+    display: flex;
+    align-items: center ;
+    
+}
+.links li{
+    margin: 0 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image:url("images/Wallpaper\ 1080p\ \(73\).jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-content{
+    color: rgb(109, 3, 26);
+    text-align: center;
+}
+.header-content h1{
+font-size: 7vmin;
+margin-bottom: 12px;
+}
+.header-content h2{
+font-size: 5vmin;
+}
+.line{
+    width: 180px;
+    height: 5px;
+    background: #b82626;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.header-content a{
+text-decoration: none;
+}
+
+.btn{
+    background: #b82626;
+    padding: 10px 15px;
+    color: whitesmoke;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 5px;
+}
+.menu{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    width: 35px;
+    display: none ;
+    
+}
+
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+section img{
+    width: 400px;
+    height: 30%;
+}
+.heading{
+    text-align: center;
+    font-size: 4vmin;
+    color: #5e5a5a;
+}
+ .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.row .col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.heading .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: rgb(61, 60, 60);
+    margin: 20px auto;
+}
+p{
+    color: #4e4c4c;
+    padding: 0 40px;
+} 
+
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    
+}
+.explore-content{
+width: 60%;
+padding: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;margin-top: 100px;
+}
+.explore-content h1{
+    margin-top: 5   0px;
+    font-size: 7vmin;
+    color:#4e4c4c;
+}
+.explore-content p{
+    font-size: 3vmin;
+    margin: 30px;
+    text-align: center;
+    color: #5e5a5a;
+}
+
+.content-col{
+    width: 40%;
+}
+.img-col{
+    width:60%;
+}
+.tours .img-gal{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+align-items:center ;
+}
+.img-gal img{
+   max-width: 300px;
+    margin: 5px;
+}
+.content-col h1{
+    font-size: 6vmin;
+    color: #4e4c4c;
+}
+.content-col .line{
+    margin-left: -1px;
+}
+.content-col p{
+    font-size: 3vmin;
+    color: #5e5a5a;
+    padding: 0;
+    margin: 30px auto;
+}
+.content-col .btn{
+    margin-left: -300px;
+}
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 20px auto;
+    background-color: #4e4c4c;
+    text-align: center;
+}
+.footer p{
+    color: whitesmoke;
+    padding: 20px auto;
+    margin : 20px auto;
+   
+}
+
+/* responsiveness */
+@media only screen and (max-width:850px){
+   .menu{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: whitesmoke;
+    }
+    .links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(121, 66, 66);
+        color: whitesmoke;
+        margin-top: -900px;
+        transition: all 0.5sec ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 20%;
+    }
+    .links li{
+        margin:30px auto;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 90%;
+    }
+
+    .explore-content{
+        width: 100%;
+    }
+    .tours .col{
+        width: 100%;
+    }
+    .img-gal{
+        justify-content: center;
+        align-items: center;
+    }
+    .img-gal img{
+        width: 90%;
+    }
+    .footer{
+        padding: 10px;
+    }
+}
+
+/* animantions */
+img{
+    transition: transform .3sec ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.btn:hover{
+    background: whitesmoke;
+    color: #b82626;
+    box-shadow: 2px 2px 5px black;
+}
+li:hover{
+    color: #f8f7f7;
+    cursor: pointer;
+}
